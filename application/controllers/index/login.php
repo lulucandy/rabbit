@@ -8,7 +8,7 @@ class Login extends CI_Controller {
 
     /* 登录 */
 	public function index()	{
-		// echo site_url();die;
+		//echo site_url();die;
 		$this->load->view('index/login.html');
 	}
 		
