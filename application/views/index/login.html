@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  name="viewport" content="width=device-width,initial-scale=1.0" charset="utf-8"/>
+
+		<title>云彩</title>
+		<link rel="stylesheet" type="text/css" href="<?php  echo base_url() .'style/' ?>css/login.css"/>
+	</head>
+	<body>
+
+		<div class="ss">
+			<div class="s1"></div>
+			<div class="s2"></div>
+			<div class="s3"></div>
+            <form method="post" action="<?php echo site_url('index/login/login_in') ?>"  >
+	          <div class="login-in">
+			     <h1>Login in</h1>
+
+				    <input type="text" id="username" name="user_id" placeholder="请输入您的用户名！" value="" />
+				    <input type="password" id="password" name="password" placeholder="请输入您的用户密码！" value="" />
+				    <label id="label_m">管理员</label><input type="radio" name="classify" value="0" id="manager" />
+				    <label id="label_u">售票员</label><input type="radio" name="classify" value="1" checked="checked" id="user" />
+			        <button type="submit" class="button">登录</button></a>
+				     <a href="<?php echo site_url('index/home/index') ?>" class="quickBtn">快速登录</a>
+				     <i class="quickBtn1">|</i>
+				     <a class="quickBtn2" href="<?php  echo base_url() .'index/regist'  ?>">注册</a>
+		      </div>
+            </form>
+
+
+
+            <div class="footer">
+                <p>&copy;copyright 2018  303小仙女 版权所有 </p>
+            </div>
+		</div>
+		<!-- <script language=javascript>
+            function toopen(){
+                if(document.getElementById("username").value=="04163187"){
+                    document.forms[0].action="index.html";
+
+                }else{
+                    alert("用户不存在！")
+                    return false;
+                }
+                if(document.getElementById("password").value=="123456"){
+                    document.forms[0].action="index.html";
+                    document.forms[0].action="Index.aspx.html";
+                    return true;
+                }else{
+                    alert("密码不正确！")
+                    return false;
+                }
+            }
+		</script>
+ -->
+
+		<script src="assets/js/jquery-1.8.2.min.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<html >
+<head>
+<meta charset="utf-8">
+<title>用户注册</title>
+<style>
+.tbl(font-size:10pt;width:30%;text-align:right:background-color:#abcdef;)
+</style>
+
+<script language="JavaScript">
+function check_name()
+{
+	if(login.ad.value=="")
+	{
+		alart("请输入用户名！");
+		return false;
+	}
+	}
+	</script>
+	</head>
+
+<body >
+<div style="position:absolute;z-index:-1;width:100%;height:100%;">
+</div>
+</body>
+
+
+<body>
+<h1><div class="text" style=" text-align:center;">用户注册</div></h1>
+<br/>
+<br/>
+<form name='login' action="<?php echo site_url('index/regist/register') ?> " method="POST" onsubmit="return check_name()">
+<table border="0" width="200px" align="center">
+	<tr>
+		<td class="tbl">用户名：  </td><td><input type="text" name="user" "></td>
+	</tr>
+	<tr>
+		<td class="tbl">密码：  </td><td><input type="text" name="user_passwd" ></td>
+	</tr>
+	<tr>
+		<td><input type="submit" value="注册"></td>
+	</tr>
+</table>
+</form>
+
+
+</body>
+<html>
